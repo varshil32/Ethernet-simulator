@@ -1,0 +1,200 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f6fa;
+  color: #2f3640;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #273c75;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controls input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  flex: 1;
+  max-width: 300px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #273c75;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.controls button:hover {
+  background-color: #40739e;
+}
+
+.bus {
+  width: 90%;
+  height: 6px;
+  background: linear-gradient(90deg, #273c75, #00a8ff);
+  margin: 20px auto;
+  border-radius: 3px;
+  position: relative;
+}
+
+.computers {
+  display: flex;
+  
+  justify-content: space-evenly;
+  
+  width: 100%;
+  
+  max-width: 800px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  
+  width: 100%;
+  
+  max-width: 800px;
+  
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+  
+  color: #273c75;
+  flex: 1;
+  
+  text-align: left;
+  
+}
+
+.message-box {
+  flex: 2;
+  
+  height: 50px;
+  
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #dcdde1;
+  border-radius: 8px;
+  resize: none;
+  outline: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.clear-log {
+  flex: 1;
+  
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #273c75;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.clear-log:hover {
+  background-color: #40739e;
+}
+
+
+.computer-container {
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  
+}
+
+.computer {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.computer:hover {
+  transform: scale(1.1);
+  
+}
+
+.computer-label {
+  margin-top: 5px;
+  
+  font-size: 1rem;
+  color: #2f3640;
+  text-align: center;
+}
+
+
+.computer:hover {
+  transform: scale(1.1);
+  
+}
+
+.chatbox {
+  width: 90%;
+  max-width: 600px;
+  height: 300px;
+  border: 1px solid #dcdde1;
+  border-radius: 12px;
+  background-color: #ffffff;
+  padding: 15px;
+  margin-top: 20px;
+  overflow-y: auto;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chatbox div {
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  background-color: #f1f2f6;
+  font-size: 0.9rem;
+}
+
+.packet {
+  width: 70px;
+  height: 40px;
+  background: #e84118;
+  color: white;
+  position: absolute;
+  top: -20px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  display: none;
+  
+}
